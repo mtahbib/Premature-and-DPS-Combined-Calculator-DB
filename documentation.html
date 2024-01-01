@@ -3,18 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documentation</title>
+    <title>Contact us</title>
+    <!-- Include Tailwind CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
+<nav>
+    
+</nav>
+
+
+
 <body class="bg-gray-100 flex flex-col min-h-screen">
-    <div class="max-w-2xl mx-auto bg-white p-6 rounded-md shadow-md mt-10">
-        <h1 class="text-2xl font-semibold mb-4">Calculation Documentation</h1>
-        <p>
-            <!-- Your documentation content goes here -->
-            Here you can provide detailed instructions on how to use the DPS calculator, 
-            explain the calculations, or any other relevant information.
-        </p>
-        <!-- Add more content as needed -->
+    <!-- Navbar -->
+    <nav class="bg-blue-100 text-blue-800 p-4">
+        <div class="flex items-center justify-between">
+    
+            <!-- Logo on the left -->
+            <div class="flex items-center">
+                <a href="index.html"> <img src="https://dhakabankltd.com/wp-content/themes/dhakabankupdate/images/dbl-plc-logo.png" alt="Logo" class="h-8 mr-2"></a>
+              </div>
+              <a href="index.html" class="text-lg font-extrabold">User Guide</a>
+            <!-- Navigation links on the right -->
+            <div class="flex items-center">
+                <a href="index.html" class="mr-4">Home</a>
+                <a href="about.html" class="mr-4">About</a>
+                <a href="contact.html" class="mr-4">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+
+<body class="bg-gray-100">
+
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-center mb-6">Calculator User Guide</h1>
+
+        <!-- Section 1: Screenshot of the Calculator -->
+        <!-- outlook -->
+        <div class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Here is how the calculator looks like</h2>
+            <img src="calc.png" alt="Calculator Screenshot" class="w-1/2 rounded-lg shadow-lg mb-4">
+            <p class="text-gray-700">
+               This is the out look of the calculator. And the cases are handled according to the user inputs.
+            </p>
+        </div>
+        <!-- Works how> -->
+        <div class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">How does the calculator works?</h2>
+
+            <img src="calc1.png" alt="Calculator Screenshot" class="w-1/2 rounded-lg shadow-lg mb-4">
+            <p class="text-gray-700">
+                Here above, the general description of the calculator is explained which field calculates  the total maturity.
+            </p>
+        </div>
+        <!-- case1 -->
+        <div class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4"> Case-1</h2>
+            <img src="calc71.png" alt="Calculator Screenshot" class="w-1/2 rounded-lg shadow-lg mb-4">
+            <p class="text-gray-700">
+                If you want to calculate the DPS value based on the completed year you need to input in this 3 fields and it will calculate accordingly.
+
+            </p>
+        </div>
+         <!-- case2 -->
+         <div class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4"> Case-2</h2>
+            <img src="cacl4.png" alt="Calculator Screenshot" class="w-1/2 rounded-lg shadow-lg mb-4">
+            <p class="text-gray-700">
+               If you want to calculate the value for broken months only then you need to enter input this field.
+            </p>
+        </div>
+        <!-- Final Case -->
+           
+        <div class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Complete Case</h2>
+            <img src="calc3.png" alt="Calculator Screenshot" class="w-1/2 rounded-lg shadow-lg mb-4">
+            <p class="text-gray-700">
+             This is for the complete case. If you want to calculate the maturity value for the  completed years and broken months you need to give inout in all the fields and it will calculate automaticcaly for you.
+            </p>
+        </div>
+       
+
+        <!-- Disclaimer Section -->
+        <div class="mt-12 ">
+            <h2 class="text-2xl font-extrabold mb-4 text-red-600 animate-pulse">Disclaimer!</h2>
+            <p class="text-red-600 animate-pulse">
+               The Following Calculator was developed using Dhaka Banks rate, scheme and policy do not use this for any other purposes without <span class="font-extrabold">permission!</span>
+            </p>
+        
+            <ul class="list-disc pl-5 mt-4 text-black-600">
+                <li>Some exception may occur if the year is 1 year</li>
+                <li>If error occurs by any chance contact the Developer any chance contact @ <a href="mailto:mtahbib@gmail.com"><Span class="text-red-600 font-extrabold animate-pulse">Developer</Span></a></li>
+            </ul>
+        </div>
+        
     </div>
+    <footer class="bg-blue-100 text-blue-800 p-4 mt-auto">
+        <div class="text-center">
+            <p>&copy; 2023 Dhaka Bank PLC. All rights reserved.</p>
+            <br>
+            <p>Made By <a href="https://github.com/mtahbib"><span class="animate-pulse font-extrabold">Tahbib Manzoor</span></a></p>
+             <p class="text-sm">Supervised by Zahidul Islam Shakil</p>
+        </div>
+    </footer>
 </body>
 </html>
